@@ -100,6 +100,12 @@ First, let's look at the speed of our own memory stick. If it is DDR4 or 2400MHz
 
 The first is the maximum capacity that the CPU and the motherboard can support; the second is the reasonable matching of the card slot, the performance of the whole machine should be balanced; the last is to see the parameters of the computer memory, the same type of frequency is the best, too High and low will have an impact on the computer. Therefore, when we buy, don't be deceived by the merchants. The bigger the better, the only one that is most suitable for your computer is the one you choose.
 
+#### Reference:
+ https://baijiahao.baidu.com/s?id=1612726385807021316&wfr=spider&for=pc
+ https://zhidao.baidu.com/question/564059652.html
+ http://www.elecfans.com/d/659117.html
+ https://blog.csdn.net/u010794281/article/details/46045157
+
 
 
 
