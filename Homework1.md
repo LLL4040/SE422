@@ -101,13 +101,6 @@ All of these are fully distributed, and may run on the same set of servers. Clie
 #### 3. Set the appropriate ceph configuration parameters
 
 ## Network
-<<<<<<< HEAD
-### 标题1
-### 标题2
-## xPU 
-### fyr
-### fyr
-=======
 
 ### Introduction
 
@@ -203,10 +196,22 @@ The coverage is between WAN and LAN
 * If your organization consists of more than one person with a computer, and each needs to communicate with the others, then give serious consideration to a LAN.
 * Choose according to fault tolerance, network management, performance, Internet connectivity, etc.
 
-## xPU
-### 标题1
-### 标题2
->>>>>>> master
+## NPU  
+![nup](https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=7d49746fc611728b30788424f8cceff6/2e2eb9389b504fc2792b4bfbeedde71191ef6ddc.jpg)
+### 1、NPU Vendor and technology type  
+* The embedded neural network processor (NPU) adopts the "data-driven parallel computing" architecture, and is especially good at processing massive multimedia data of video and image.  
+* Characteristics：Under the HiAI architecture, the AI ​​performance density is much better than that of the CPU and GPU, enabling more tasks to be completed faster with less power consumption, greatly improving the computational efficiency of the chip.
+* Disadvantage：Loss of versatility in exchange for high performance
+### 2、NPU key indicator    
+* Performance and power consumption：This NPU evolution is similar to the previous architecture of CPUs from single core to large and small cores. The big core and small core are based on the same architecture design.  when a high-load task occurs, the large core can be topped up with strong performance, thereby enabling the chip to have strong performance while reducing the power consumption of the chip.
+* compare with cpu and gpu（HUAWEI Kirin 970 as example）For the first time, the Kirin 970 integrates an NPU specifically tailored for deep learning, with FP16 performance of 1.92 TFLOP. Specifically, the NPU is 25 times that of the CPU and 6.25 times (25/4) of the GPU. The energy efficiency ratio is 50 times that of the CPU and 6.25 times (50/8) of the GPU.    
+![Kirin 970](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D49%2C0%2C561%2C371%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=8da5a05aebcd7b89fd2360c332107b8b/aec379310a55b319b26622e54ea98226cefc1786.jpg)  
+
+### 3、How to weigh and choose NPU and others
+* The NPU subverts the traditional von Neumann computer architecture used by the CPU.
+* This type of data stream processor greatly increases the ratio of computing power to power consumption, enabling artificial intelligence to be used in embedded machine vision applications.
+* while such specialized hardware can achieve greater efficiency in terms of hardware and power in handling artificial intelligence, it also loses flexibility.
+
 
 ## Memory
 
