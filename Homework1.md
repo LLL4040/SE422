@@ -323,3 +323,5 @@ The coverage is between WAN and LAN
 * [Bandwidth-delay product](https://en.wikipedia.org/wiki/Bandwidth-delay_product)
 * [Round-trip delay time](https://en.wikipedia.org/wiki/Round-trip_delay_time)
 * [Selecting the Right Computer Network](https://www.journalofaccountancy.com/issues/1997/feb/select.html)
+* [Introduction to NPU and performance analysis of Kirin 970's NPU](http://www.elecfans.com/d/622258.html)
+* [Why does NPU move toward heterogeneity?](http://www.wyzxwk.com/Article/chanye/2019/09/408023.html)
