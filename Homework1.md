@@ -45,6 +45,7 @@ All of these are fully distributed, and may run on the same set of servers. Clie
 * HITACHI
     * HiTACHI's traditional strengths are on small mobile hard drives and laptop hard drives, but as its product line continues to evolve: Ulltrastar, a 3.5-inch drive for servers and workstations.Deskstar: 3.5-inch hard drive for high-performance personal computers.1.8'', 2.5'' mobile hard drive, 1.8" and 2.5" hard drive for mobile processing and portable devices. Hard drive series for specific applications, such as streaming consumer electronics applications.
 * Contrast between them
+
 ![对比1](https://github.com/LLL4040/images/blob/master/SE422_storage1.png?raw=true)
 ![对比2](https://github.com/LLL4040/images/blob/master/SE422_storage2.png?raw=true)
 
@@ -153,6 +154,7 @@ The coverage is between WAN and LAN
 
 * In computing, bandwidth is the maximum rate of data transfer across a given path. Bandwidth may be characterized as network bandwidth, data bandwidth, or digital bandwidth.
 * This table shows the maximum bandwidth (the physical layer net bitrate) of common Internet access technologies.
+
     | Technologies | Maximum bandwidth |
     | :----: | :----: |
     | 100 Gigabit Ethernet | 100 Gbit/s |
@@ -167,6 +169,7 @@ The coverage is between WAN and LAN
     | Fast Ethernet | 100 Mbit/s |
     | Ethernet | 10 Mbit/s |
     | Modem / Dialup | 56 kbit/s |
+
 * Bandwidth is measured in bits per second.
 
 #### 3. Throughput
@@ -208,6 +211,7 @@ The coverage is between WAN and LAN
 * Intel is the big brother of CPU production, it has more than 80% market share, Intel's CPU has become the de facto x86CPU technical specifications and standards. The most recent ones are the Celeron Athlon series, the Pentium Pentium series, the Core 2 Core series, and the i7 i5 i3 series CPU.
 * AMD, the latest Athlon64x2 and Sempron have a good price/performance ratio, especially with 3DNOW+ technology, which makes it perform well on 3D.
 * The following are rarely seen:IBM and Cyrix,IDT Corporation,IA VIA Technologies,Domestic dragon core.GodSon is a general-purpose processor with state-owned intellectual property rights. It has two generations of products, which can reach the low-end CPU level of INTEL and AMD on the market.
+
 ![intel and amd](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571566701&di=775da12589e52eda1a6ec78d12965f7a&imgtype=jpg&er=1&src=http%3A%2F%2Farticle.fd.zol-img.com.cn%2Ft_s640x2000%2Fg5%2FM00%2F00%2F06%2FChMkJloCzbGIW5b_AAKiFrfOCoQAAh8QgJQagkAAqIu206.jpg)
 
 #### 2、CPU key indicator
@@ -239,6 +243,7 @@ The coverage is between WAN and LAN
 
 * Performance and power consumption：This NPU evolution is similar to the previous architecture of CPUs from single core to large and small cores. The big core and small core are based on the same architecture design.  when a high-load task occurs, the large core can be topped up with strong performance, thereby enabling the chip to have strong performance while reducing the power consumption of the chip.
 * compare with cpu and gpu（HUAWEI Kirin 970 as example）For the first time, the Kirin 970 integrates an NPU specifically tailored for deep learning, with FP16 performance of 1.92 TFLOP. Specifically, the NPU is 25 times that of the CPU and 6.25 times (25/4) of the GPU. The energy efficiency ratio is 50 times that of the CPU and 6.25 times (50/8) of the GPU.
+
 ![Kirin 970](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D49%2C0%2C561%2C371%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=8da5a05aebcd7b89fd2360c332107b8b/aec379310a55b319b26622e54ea98226cefc1786.jpg)  
 
 #### 3、How to weigh and choose NPU and others
