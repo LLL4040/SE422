@@ -89,8 +89,101 @@ All of these are fully distributed, and may run on the same set of servers. Clie
 #### 3. Set the appropriate ceph configuration parameters
 
 ## Network
-### 标题1
-### 标题2
+
+### Introduction
+
+A computer network is a digital telecommunications network which allows nodes to share resources. In computer networks, computing devices exchange data with each other using connections (data links) between nodes. These data links are established over cable media such as wires or optic cables, or wireless media such as Wi-Fi.
+
+### Type
+
+![LAN and WAN](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/LAN_WAN_scheme.svg/1200px-LAN_WAN_scheme.svg.png)
+
+#### 1. LAN(local area network)
+
+* Features
+    * The geographic coverage covered by the network is relatively small. Usually no more than tens of kilometers, even in a building or a room.
+    * The transmission rate of information is relatively high, ranging from 1 Mbps to 10 Mbps, which has reached 100 Mbps.
+    * The management and management rights of the network belong to a certain unit.
+* Advantages(wireless LAN)
+    * It saves the need for difficult, costly and time-consuming wiring construction, reduces the impact on the surrounding environment of the construction, and saves a lot of economic costs.
+    * Installation is simple and fast. Generally, as long as one or more Access Point (AP) devices are installed, a local area network covering the entire building or area can be established. In this signal coverage area, any location can access the network.Extremely convenient to use.
+* Disadvantages(wireless LAN)
+    * The rate is slow, generally susceptible to interference, and power is limited.
+    * Transmission medium vulnerability and insufficient WEP.
+    * Still not completely out of the wired network.
+
+#### 2. MAN(metropolitan area network)
+
+The coverage is between WAN and LAN
+
+#### 3. WAN(wide area network)
+
+* Features
+    * The WAN consists of more than two LANs, and the connections between these LANs can traverse a distance of more than 30 mile *.
+    * A large WAN can consist of many LANs and MANs on all continents.
+    * The most widely known WA N is the Internet, which is made up of thousands of LANs and WANs around the world.
+* Advantages
+    * Privacy and security: As mentioned above, a WAN provides a direct, dedicated connection through which your data can pass. This limits opportunities for others to intercept your data as it is in transit between locations. WANs offer a distinct privacy and security advantage.
+    * Network performance consistency:  Equally important, your data does not have to compete with other Internet data for bandwidth as your communications travel between destinations. You get continuous access to all the bandwidth you are paying for. This allows your business to avoid throughput lags commonly experienced in the Internet.
+    * Infrastructure management: The consistent performance and enhanced security noted above create a network environment in which you can effectively incorporate telecommunication solutions, such as VoIP. You therefore get the benefit of centralized management from a single dashboard for both your data network and telecommunications.
+* Disadvantages
+    * Initial budget costs and maintenance costs may be high.
+    * WANs offer privacy advantages, but all networks have vulnerabilities.
+
+### Key indicators
+
+#### 1. Rate
+
+* The rate, or data rate or bit rate, is one of the most important performance metrics in computer networks.
+* The unit of rate is b/s, or kb/s, Mb/s, Gb/s, etc.The rate is often referred to as the nominal rate or nominal rate.
+
+#### 2. Bandwidth
+
+* In computing, bandwidth is the maximum rate of data transfer across a given path. Bandwidth may be characterized as network bandwidth, data bandwidth, or digital bandwidth.
+* This table shows the maximum bandwidth (the physical layer net bitrate) of common Internet access technologies.
+    | Technologies | Maximum bandwidth |
+    | :----: | :----: |
+    | 100 Gigabit Ethernet | 100 Gbit/s |
+    | Thunderbolt 3 | 40 Gbit/s |
+    | 10 Gigabit Ethernet, USB 3.1 | 10 Gbit/s |
+    | OC192 | 9.6 Gbit/s |
+    | Wireless 802.11ad | 7 Gbit/s |
+    | USB 3.0 | 5 Gbit/s |
+    | OC48 | 2.5 Gbit/s |
+    | Wireless 802.11ac | 1.3 Gbit/s |
+    | Gigabit Ethernet | 1 Gbit/s |
+    | Fast Ethernet | 100 Mbit/s |
+    | Ethernet | 10 Mbit/s |
+    | Modem / Dialup | 56 kbit/s |
+* Bandwidth is measured in bits per second.
+
+#### 3. Throughput
+
+* Throughput represents the amount of data that passes through a network (or channel, interface) per unit of time.
+* Throughput is more often used to measure a network in the real world in order to know how much data is actually going through the network.
+* The throughput is limited by the bandwidth of the network or the rated rate of the network.
+
+#### 4. Delay
+
+* When data is sent, the time it takes for the block to travel from the node to the transmission medium.That is, the time from the first bit of the transmitted data frame to the time when the last bit of the frame is transmitted.
+* For high-speed network links, what we increase is only the rate at which data is sent, not the rate at which bits travel on the link.Increasing the link bandwidth reduces the transmission delay of the data.
+
+#### 5. Delay bandwidth product
+
+* In data communications, the bandwidth-delay product is the product of a data link's capacity (in bits per second) and its round-trip delay time (in seconds).
+* The result, an amount of data measured in bits (or bytes), is equivalent to the maximum amount of data on the network circuit at any given time, i.e., data that has been transmitted but not yet acknowledged.
+* A network with a large bandwidth-delay product is commonly known as a long fat network (shortened to LFN). As defined in RFC 1072, a network is considered an LFN if its bandwidth-delay product is significantly larger than 10^5 bits (12,500 bytes).
+
+#### 6. Round trip time
+
+* In telecommunications, the round-trip delay time (RTD) or round-trip time (RTT) is the length of time it takes for a signal to be sent plus the length of time it takes for an acknowledgement of that signal to be received. This time delay includes the propagation times for the paths between the two communication endpoints.
+* In the context of computer networks, the signal is generally a data packet, and the RTT is also known as the ping time. An internet user can determine the RTT by using the ping command.
+
+### How to choose
+
+* If your organization consists of more than one person with a computer, and each needs to communicate with the others, then give serious consideration to a LAN.
+* Choose according to fault tolerance, network management, performance, Internet connectivity, etc.
+
 ## xPU
 ### 标题1
 ### 标题2
@@ -102,7 +195,7 @@ All of these are fully distributed, and may run on the same set of servers. Clie
 #### 1. Memory chip manufacturers
 
 * Korean: **Samsung**, **Hynix** (modern)
-* Europe and the United States: **Micron**, ST, NXP, **Intel**, Infineon, SANDISK, TI (TI), ADI (Adejo), AMD (Super), SKYWORKS(Sica), Spansion ( Fesso Semiconductor), **Kingston** 
+* Europe and the United States: **Micron**, ST, NXP, **Intel**, Infineon, SANDISK, TI (TI), ADI (Adejo), AMD (Super), SKYWORKS(Sica), Spansion ( Fesso Semiconductor), **Kingston**
 * Japanese: Elpida (acquired by Micron), **Toshiba**, Renesas,  **Panasonic**
 * Taiwan: Huaya Technology (Meiguang Joint Venture), Nanya Technology, Ruijing (Elpida Joint Venture), Winbond, MTK (MediaTek), MXIC (Wang Hong), Etron (Zhuangchuang), Zentel (Li Ji, Force) Crystal Investment)
 
@@ -133,39 +226,26 @@ All of these are fully distributed, and may run on the same set of servers. Clie
 
 #### 1.MCP (Multi-Chip Packaging; MCP)
 
-Multi-chip packaging technology is to package two or more kinds of memory chips in the same BGA through integration (horizontal placement) and/or stacking. The storage scheme is generally **one NAND Flash chip** plus one low power consumption. **DRAM or Mobile RAM**. Its main application areas are handheld smart terminal devices such as **mobile phones**.
-
-##### Features
-
-Because it is packaged together, it can effectively reduce external interference, enhance the communication capability between the NAND Flash memory chip and DEAM, and improve the overall performance of the chip. Small size and low cost. In addition, the MCP package can save 70% space compared to 2 TSOPs, saving an average of 30%-40% board space for the final product. The MCP product not only saves board space, but also simplifies the manufacturing process and saves the original. It shortens the development time of new terminal products and speeds up the launch of the terminal products.
-
-##### Application areas
-
-Smartphone, feature phone, etc.
+* Multi-chip packaging technology is to package two or more kinds of memory chips in the same BGA through integration (horizontal placement) and/or stacking. The storage scheme is generally **one NAND Flash chip** plus one low power consumption. **DRAM or Mobile RAM**. Its main application areas are handheld smart terminal devices such as **mobile phones**.
+* Features
+    * Because it is packaged together, it can effectively reduce external interference, enhance the communication capability between the NAND Flash memory chip and DEAM, and improve the overall performance of the chip. Small size and low cost. In addition, the MCP package can save 70% space compared to 2 TSOPs, saving an average of 30%-40% board space for the final product. The MCP product not only saves board space, but also simplifies the manufacturing process and saves the original. It shortens the development time of new terminal products and speeds up the launch of the terminal products.
+* Application areas
+    * Smartphone, feature phone, etc.
 
 #### 2.eMMC
 
-It is **a package of Flash control IC and NAND Flash**. This solution is better than NAND flash alone and has better compatibility. eMMC's embedded memory standard specification for the JEDEC Association has the advantage of simplifying memory design. The package uses a multi-chip package (MCP) technology to package the control IC and NAND Flash into a single component.
-
-##### Advantage
-
-eMMC combines data storage and replaces the NOR Flash support system boot function, which is widely used in smart phones, tablets, smart boxes, smart TVs and other products.
-
-##### Application areas
-
-**Tablets**, **smartphones**, etc.
+* It is **a package of Flash control IC and NAND Flash**. This solution is better than NAND flash alone and has better compatibility. eMMC's embedded memory standard specification for the JEDEC Association has the advantage of simplifying memory design. The package uses a multi-chip package (MCP) technology to package the control IC and NAND Flash into a single component.
+* Advantage
+    * eMMC combines data storage and replaces the NOR Flash support system boot function, which is widely used in smart phones, tablets, smart boxes, smart TVs and other products.
+* Application areas
+    * **Tablets**, **smartphones**, etc.
 
 #### 3.eMCP
-
-It is based on MCP products. The storage solution is **an eMMC chip plus a low-power DRAM or Mobile RAM**.
-
-##### Advantage
-
-Compared with the traditional MCP, eMCP can reduce the burden of the main chip operation and manage the larger capacity of the flash memory because of **the built-in NAND Flash control chip**. In terms of external design, whether it is eMCP or eMMC The embedded memory design concept is to make the smart phone's exterior thinner and the cabinet more complete.
-
-##### Application areas
-
-Tablet, smartphone.
+* It is based on MCP products. The storage solution is **an eMMC chip plus a low-power DRAM or Mobile RAM**.
+* Advantage
+    * Compared with the traditional MCP, eMCP can reduce the burden of the main chip operation and manage the larger capacity of the flash memory because of **the built-in NAND Flash control chip**. In terms of external design, whether it is eMCP or eMMC The embedded memory design concept is to make the smart phone's exterior thinner and the cabinet more complete.
+* Application areas
+    * Tablet, smartphone.
 
 ### Performance
 
@@ -184,15 +264,13 @@ Tablet, smartphone.
 
 #### 4.GUF
 
-* vThe higher frequency given by the manufacturer is lowered some, and the value thus obtained is called the rated available frequency GUF. For a memory bank of 8 ns, the highest usable frequency is 125 MHz, then the rated available frequency (GUF) should be 112 MHz. The highest available frequency and the rated available frequency (front-end system bus operating frequency) maintain a certain margin to maximize the stability of the system.
+* The higher frequency given by the manufacturer is lowered some, and the value thus obtained is called the rated available frequency GUF. For a memory bank of 8 ns, the highest usable frequency is 125 MHz, then the rated available frequency (GUF) should be 112 MHz. The highest available frequency and the rated available frequency (front-end system bus operating frequency) maintain a certain margin to maximize the stability of the system.
 
 ### How to choose
 
-And when we choose, how big is it? One of the most important decision parameters is the maximum amount of memory supported by the CPU and the motherboard. Some CPUs and motherboards support 32G of memory, and more than 32G of memory is wasted, which is superfluous.
-
-First, let's look at the speed of our own memory stick. If it is DDR4 or 2400MHz, then the memory stick you add is best at the same rate. A memory stick below 2400MHz will pull down the overall speed, even if you add a 16G size, it will not help. Similarly, buy a memory stick higher than 2400MHz, the operating state will be pulled down to 2400MHz.
-
-The first is the maximum capacity that the CPU and the motherboard can support; the second is the reasonable matching of the card slot, the performance of the whole machine should be balanced; the last is to see the parameters of the computer memory, the same type of frequency is the best, too High and low will have an impact on the computer. Therefore, when we buy, don't be deceived by the merchants. The bigger the better, the only one that is most suitable for your computer is the one you choose.
+* And when we choose, how big is it? One of the most important decision parameters is the maximum amount of memory supported by the CPU and the motherboard. Some CPUs and motherboards support 32G of memory, and more than 32G of memory is wasted, which is superfluous.
+* First, let's look at the speed of our own memory stick. If it is DDR4 or 2400MHz, then the memory stick you add is best at the same rate. A memory stick below 2400MHz will pull down the overall speed, even if you add a 16G size, it will not help. Similarly, buy a memory stick higher than 2400MHz, the operating state will be pulled down to 2400MHz.
+* The first is the maximum capacity that the CPU and the motherboard can support; the second is the reasonable matching of the card slot, the performance of the whole machine should be balanced; the last is to see the parameters of the computer memory, the same type of frequency is the best, too High and low will have an impact on the computer. Therefore, when we buy, don't be deceived by the merchants. The bigger the better, the only one that is most suitable for your computer is the one you choose.
 
 ## Reference
 
@@ -207,3 +285,13 @@ The first is the maximum capacity that the CPU and the motherboard can support; 
 * [内存的主要性能和指标有哪些?](https://zhidao.baidu.com/question/564059652.html)
 * [DRAM、NAND FLASH、NOR FLASH三大存储器分析](http://www.elecfans.com/d/659117.html)
 * [Memory芯片的应用攻略](https://blog.csdn.net/u010794281/article/details/46045157)
+* [Computer network](https://en.wikipedia.org/wiki/Computer_network)
+* [计算机网络基本概述及简单介绍](https://blog.csdn.net/qq_36474990/article/details/78743439)
+* [网络](https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C/143243#5)
+* [无线局域网的优缺点](https://wenku.baidu.com/view/594d572e7375a417866f8f7a.html)
+* [Wide Area Networks: The Pros and Cons](https://www.firstlight.net/wide-area-networks-the-pros-and-cons/)
+* [Bandwidth (computing)](https://en.wikipedia.org/wiki/Bandwidth_(computing))
+* [网络技术基础](https://www.jianshu.com/p/fc45e0ff73f4)
+* [Bandwidth-delay product](https://en.wikipedia.org/wiki/Bandwidth-delay_product)
+* [Round-trip delay time](https://en.wikipedia.org/wiki/Round-trip_delay_time)
+* [Selecting the Right Computer Network](https://www.journalofaccountancy.com/issues/1997/feb/select.html)
