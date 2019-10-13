@@ -196,21 +196,42 @@ The coverage is between WAN and LAN
 * If your organization consists of more than one person with a computer, and each needs to communicate with the others, then give serious consideration to a LAN.
 * Choose according to fault tolerance, network management, performance, Internet connectivity, etc.
 
-## NPU  
+## xPU  
+### CPU
+![cpu](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571566100&di=4a0ebd3c41ed12d537090f027755248a&imgtype=jpg&er=1&src=http%3A%2F%2Fimg1.cache.netease.com%2Fcatchpic%2F9%2F98%2F98FFADA8323A52C4BA2406D99A4639D5.jpg)
+#### 1、CPU Vendor and technology type
+* The current common computer CPU manufacturers are: Intel and AMD.
+* Intel is the big brother of CPU production, it has more than 80% market share, Intel's CPU has become the de facto x86CPU technical specifications and standards. The most recent ones are the Celeron Athlon series, the Pentium Pentium series, the Core 2 Core series, and the i7 i5 i3 series CPU.
+* AMD, the latest Athlon64x2 and Sempron have a good price/performance ratio, especially with 3DNOW+ technology, which makes it perform well on 3D.
+* The following are rarely seen:IBM and Cyrix,IDT Corporation,IA VIA Technologies,Domestic dragon core.GodSon is a general-purpose processor with state-owned intellectual property rights. It has two generations of products, which can reach the low-end CPU level of INTEL and AMD on the market.
+![intel and amd](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571566701&di=775da12589e52eda1a6ec78d12965f7a&imgtype=jpg&er=1&src=http%3A%2F%2Farticle.fd.zol-img.com.cn%2Ft_s640x2000%2Fg5%2FM00%2F00%2F06%2FChMkJloCzbGIW5b_AAKiFrfOCoQAAh8QgJQagkAAqIu206.jpg)
+#### 2、CPU key indicator
+* CPU cache capacity and performance: The larger the calculated cache capacity, the better his performance.
+* CPU working voltage: the range of normal operating voltage of the CPU is wider.Now the voltage required for the normal operation of the CPU is getting lower and lower than before, and the current minimum is 1.1V.
+* Strengthen the working voltage, strengthen the operating efficiency of the CPU, and achieve the purpose of overclocking.
+* For the CPU, the indicators that affect its performance mainly include the main frequency, the number of CPU bits, and the CPU's cache instruction set.
+#### 3、How to weigh and choose CPU and GPU
+* The workflow and physical structure of the CPU and GPU are roughly similar. Compared to the CPU, the GPU works more singly.
+* The CPU has a powerful arithmetic unit that can perform arithmetic calculations in a small number of clock cycles.The GPU is based on a large throughput design with many arithmetic units and very little cache.
+* Because the CPU has a large number of caches and complex logic control units, it is very good at logic control, serial operations.
+* Because GPU has a large number of arithmetic units, it can perform a lot of calculations at the same time. It is good at large-scale concurrent calculations. It has a large amount of calculation but no technical content, and it has to be repeated many times.
+* to sum up, using the CPU to do complex logic control, using the GPU to do simple but large arithmetic operations, can greatly improve the speed of the program.
+### NPU
 ![nup](https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=7d49746fc611728b30788424f8cceff6/2e2eb9389b504fc2792b4bfbeedde71191ef6ddc.jpg)
-### 1、NPU Vendor and technology type  
+#### 1、NPU Vendor and technology type  
 * The embedded neural network processor (NPU) adopts the "data-driven parallel computing" architecture, and is especially good at processing massive multimedia data of video and image.  
 * Characteristics：Under the HiAI architecture, the AI ​​performance density is much better than that of the CPU and GPU, enabling more tasks to be completed faster with less power consumption, greatly improving the computational efficiency of the chip.
 * Disadvantage：Loss of versatility in exchange for high performance
-### 2、NPU key indicator    
+#### 2、NPU key indicator    
 * Performance and power consumption：This NPU evolution is similar to the previous architecture of CPUs from single core to large and small cores. The big core and small core are based on the same architecture design.  when a high-load task occurs, the large core can be topped up with strong performance, thereby enabling the chip to have strong performance while reducing the power consumption of the chip.
 * compare with cpu and gpu（HUAWEI Kirin 970 as example）For the first time, the Kirin 970 integrates an NPU specifically tailored for deep learning, with FP16 performance of 1.92 TFLOP. Specifically, the NPU is 25 times that of the CPU and 6.25 times (25/4) of the GPU. The energy efficiency ratio is 50 times that of the CPU and 6.25 times (50/8) of the GPU.    
 ![Kirin 970](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D49%2C0%2C561%2C371%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=8da5a05aebcd7b89fd2360c332107b8b/aec379310a55b319b26622e54ea98226cefc1786.jpg)  
 
-### 3、How to weigh and choose NPU and others
+#### 3、How to weigh and choose NPU and others
 * The NPU subverts the traditional von Neumann computer architecture used by the CPU.
 * This type of data stream processor greatly increases the ratio of computing power to power consumption, enabling artificial intelligence to be used in embedded machine vision applications.
 * while such specialized hardware can achieve greater efficiency in terms of hardware and power in handling artificial intelligence, it also loses flexibility.
+
 
 
 ## Memory
@@ -323,5 +344,7 @@ The coverage is between WAN and LAN
 * [Bandwidth-delay product](https://en.wikipedia.org/wiki/Bandwidth-delay_product)
 * [Round-trip delay time](https://en.wikipedia.org/wiki/Round-trip_delay_time)
 * [Selecting the Right Computer Network](https://www.journalofaccountancy.com/issues/1997/feb/select.html)
+* [Cpu introduction](https://baike.baidu.com/item/中央处理器/284033?fromtitle=CPU&fromid=120556&fr=aladdin)
+* [Compare different cpu manufacturers](http://blog.sina.com.cn/s/blog_6e8cfd7b0102ysut.html)
 * [Introduction to NPU and performance analysis of Kirin 970's NPU](http://www.elecfans.com/d/622258.html)
 * [Why does NPU move toward heterogeneity?](http://www.wyzxwk.com/Article/chanye/2019/09/408023.html)
