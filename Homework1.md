@@ -36,6 +36,18 @@ Ceph employs five distinct kinds of daemons:
 
 All of these are fully distributed, and may run on the same set of servers. Clients with different needs can directly interact with different subsets of them.
 
+### Suppliers
+
+* Seagate
+    * Seagate is a professional hard drive manufacturer.Launched a full range of hard drives for multi-domain applications. At present, Seagate has three major product lines,Personal storage hard drive,Enterprise storage hard drive and Consumer Storage Hard Disks The above three series can meet the application needs of different levels and different fields. Seagate has a complete variety, rapid technological innovation, and good quality in the storage hard disk market.
+* Western Digital
+    * Western Digital offers a broad range of technologies and products, including storage systems for data center environments, storage platforms and data center drives; for mobility, terminal and computing environments for automotive, connected home, industrial and IOT, smartphones andTablets, monitored embedded mobile flash cards, and built-in hard drives for computing, enterprise, gaming, NAS and surveillance devices. WD designs environmentally friendly and energy-efficient GreenPower technology hard drives for WD desktops, enterprises, CE and external hard drives.
+* HITACHI
+    * HiTACHI's traditional strengths are on small mobile hard drives and laptop hard drives, but as its product line continues to evolve: Ulltrastar, a 3.5-inch drive for servers and workstations.Deskstar: 3.5-inch hard drive for high-performance personal computers.1.8'', 2.5'' mobile hard drive, 1.8" and 2.5" hard drive for mobile processing and portable devices. Hard drive series for specific applications, such as streaming consumer electronics applications.
+* Contrast between them
+![对比1](https://github.com/LLL4040/images/blob/master/SE422_storage1.png?raw=true)
+![对比2](https://github.com/LLL4040/images/blob/master/SE422_storage2.png?raw=true)
+
 ### Ceph features
 
 #### 1. Advantage
@@ -281,6 +293,9 @@ The coverage is between WAN and LAN
 * [Ceph 目前的优缺点分析](https://eof.net/p/5c4da57fe1382301b7843a4a)
 * [Ceph的稳定性与性能调优](http://gcs.truan.wang/portfolio/ceph-stability-and-performance-tuning/)
 * [Ceph性能优化总结(v0.94)](http://xiaoquqi.github.io/blog/2015/06/28/ceph-performance-optimization-summary/)
+* [西部数据百度百科](https://baike.baidu.com/item/%E8%A5%BF%E9%83%A8%E6%95%B0%E6%8D%AE/6572761?fr=aladdin)
+* [日立硬盘百度百科](https://baike.baidu.com/item/%E6%97%A5%E7%AB%8B%E7%A1%AC%E7%9B%98/6463486?fr=aladdin)
+* [常见硬盘供应商及产品介绍](https://www.taodocs.com/p-288494283.html)
 * [电脑内存条真的是越大越好吗？别再被商家骗钱了！](https://baijiahao.baidu.com/s?id=1612726385807021316&wfr=spider&for=pc)
 * [内存的主要性能和指标有哪些?](https://zhidao.baidu.com/question/564059652.html)
 * [DRAM、NAND FLASH、NOR FLASH三大存储器分析](http://www.elecfans.com/d/659117.html)
