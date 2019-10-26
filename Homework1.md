@@ -203,7 +203,7 @@ The coverage is between WAN and LAN
 * The current common computer CPU manufacturers are: Intel and AMD.
 * Intel is the big brother of CPU production, it has more than 80% market share, Intel's CPU has become the de facto x86CPU technical specifications and standards. The most recent ones are the Celeron Athlon series, the Pentium Pentium series, the Core 2 Core series, and the i7 i5 i3 series CPU.
 * AMD, the latest Athlon64x2 and Sempron have a good price/performance ratio, especially with 3DNOW+ technology, which makes it perform well on 3D.
-* The following are rarely seen:IBM and Cyrix,IDT Corporation,IA VIA Technologies,Domestic dragon core.GodSon is a general-purpose processor with state-owned intellectual property rights. It has two generations of products, which can reach the low-end CPU level of INTEL and AMD on the market.
+* The following are rarely seen:IBM and Cyrix,IDT Corporation,IA VIA Technologies,Domestic dragon core.
 ![intel and amd](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571566701&di=775da12589e52eda1a6ec78d12965f7a&imgtype=jpg&er=1&src=http%3A%2F%2Farticle.fd.zol-img.com.cn%2Ft_s640x2000%2Fg5%2FM00%2F00%2F06%2FChMkJloCzbGIW5b_AAKiFrfOCoQAAh8QgJQagkAAqIu206.jpg)
 #### 2、CPU key indicator
 * CPU cache capacity and performance: The larger the calculated cache capacity, the better his performance.
