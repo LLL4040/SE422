@@ -1,6 +1,6 @@
 # Borg
 
-> Reading notes about**《Large-scale cluster management at Google with Borg》**
+> Reading notes about **《Large-scale cluster management at Google with Borg》**
 
 ## What is Borg?
 
