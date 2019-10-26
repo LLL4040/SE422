@@ -42,33 +42,7 @@ Apollo is a distributed scheduling framework for shared cluster state under Micr
 
 ​    The following figure depicts the communication between JM, PN and RM, showing how Apollo balances both distributed scheduling and shared cluster state.
 
-```sequence
-JM->PN: dispatch tasks
-
-Note right of PN: Task Queue
-
-Note right of PN: Wait-Time Matrix
-
-PN-->JM: send back queue information
-
-JM->JM: adjust dispatch decision
-
-PN-->JM: send back runtime statistics
-
-JM->JM: refine predict strategy
-
-PN-->RM: send load information
-
-PN-->PN: update wait-time matrix frequently
-
-PN-->RM: send wait-time matrix
-
-PN-->JM: send wait-time matrix
-
-RM->>RM: aggregate load information
-
-RM->>JM: provide global view
-```
+![sequence](https://github.com/PythonMyLife/SE100/blob/master/photos/sequnce.png?raw=true)
 
 ## Performance of Apollo
 
