@@ -65,6 +65,21 @@ Mesos includes three mechanisms to help with this goal.
 #### Framework complexity
 * Using resource offers may make framework scheduling more complex. 
 ## 四、How's the effection of Mesos
+### Macrobenchmark&Macrobenchmark Results
+#### Macrobenchmark
+* To evaluate the primary goal of Mesos, which is enabling diverse frameworks to efficiently share a cluster, we ran a macrobenchmark consisting of a mix of four workloads:
+1. AHadoopinstancerunningamixofsmallandlarge
+jobs based on the workload at Facebook.
+2. AHadoopinstancerunningasetoflargebatchjobs.
+3. Spark running a series of machine learning jobs.
+4. Torque running a series of MPI jobs.
+* We begin by describing the four workloads in more detail, and then present our results.
+#### Macrobenchmark Workloads
+* Facebook Hadoop Mix
+* Large Hadoop Mix
+* Spark
+* Torque / MPI
+#### Macrobenchmark Results 
 ### Overhead
 * The MPI job took on average 50.9s without Mesos and 51.8s with Mesos, while the Hadoop job took 160s without Mesos and 166s with Mesos. In both cases, the overhead of using Mesos was less than 4%.
 ### Data Locality through Delay Scheduling
@@ -72,6 +87,7 @@ Mesos includes three mechanisms to help with this goal.
 * Figure 8 shows averaged measurements from the 16 Hadoop instances across three runs of each scenario. 
 * As expected, job performance im- proves with data locality: jobs run 1.7x faster in the 5s delay scenario than with static partitioning.
 ### Spark Framework
+* used a logistic regression job imple- mented in Hadoop by machine learning researchers in our lab, and wrote a second version of the job using Spark. We ran each version separately on 20 EC2 nodes, each with 4 CPU cores and 15 GB RAM. Each exper- iment used a 29 GB data file and varied the number of logistic regression iterations from 1 to 30 (see Figure 9).
 * the benefit of running iterative jobs using the specialized Spark framework.
 ![Figure 9](https://img-blog.csdn.net/20161213212544874?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTM2NDYxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
