@@ -1,7 +1,6 @@
 # Mesos
 
-论文解决了什么问题，它是如何解决的，有哪些重要的方法（技术，手段，算法），效果如何，你自己的思考
-## 一、What problem has the paper solved
+## 一、What problem has the Mesos paper solved
 
 ### current problems
 * no framework will be optimal for all applications
@@ -12,13 +11,13 @@
 * We present Mesos, a platform for sharing commodity clusters between multiple diverse cluster computing frameworks, such as Hadoop and MPI. 
 * In this paper, we propose Mesos, a thin resource sharing layer that enables fine-grained sharing across diverse cluster computing frameworks, by giving frameworks a common interface for accessing cluster resources.
 
-## 二、How does the paper solve these problems?
+## 二、How does the Mesos paper solve these problems?
 ### sharing model&resource offers
 * Mesos is built around two design elements: a fine-grained sharing model at the level of tasks, and a distributed scheduling mechanism called resource offers that delegates scheduling decisions to the frameworks. 
 ###  how to build a scalable and efficient system
 * delegating control over scheduling to the frameworks
 * resource offer encapsulates a bundle of resources that a framework can allocate on a cluster node to run tasks
-## 三、What are the important methods?
+## 三、What are the important methods Mesos use?
 ### 1、main components of Mesos
 ![main components of Mesos](https://img-blog.csdn.net/20161213211754172?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTM2NDYxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 * The master implements fine-grained sharing across frameworks using resource offers. 
@@ -44,7 +43,7 @@ Mesos includes three mechanisms to help with this goal.
 * Aside from handling master failures, Mesos reports node failures and executor crashes to frameworks’ schedulers.
 *  Mesos allows a framework to register multiple schedulers such that when one fails, another one is notified by the Mesos master to take over.
 
-## 四、How's the Behavior
+## 四、How's the Behavior of Mesos
 
 * we find that Mesos performs very well when frameworks can scale up and down elastically, tasks durations are homogeneous, and frameworks prefer all nodes equally.
 ### 1、emulate a centralized scheduler
@@ -65,7 +64,7 @@ Mesos includes three mechanisms to help with this goal.
 * It is possible to construct scenarios where, because of esoteric interdependencies between frameworks (e.g., certain tasks from two frameworks cannot be colocated), only a sin- gle global allocation of the cluster performs well.
 #### Framework complexity
 * Using resource offers may make framework scheduling more complex. 
-## 四、How's the effection
+## 四、How's the effection of Mesos
 ### Overhead
 * The MPI job took on average 50.9s without Mesos and 51.8s with Mesos, while the Hadoop job took 160s without Mesos and 166s with Mesos. In both cases, the overhead of using Mesos was less than 4%.
 ### Data Locality through Delay Scheduling
@@ -83,8 +82,12 @@ Mesos includes three mechanisms to help with this goal.
 * the MTTR was between 4 and 8 seconds, with 95% confidence intervals of up to 3s on either side.
 ### Performance Isolation
 * In particular, using Containers to isolate CPU usage between a MediaWiki web server (consisting of multiple Apache processes running PHP) and a “hog” application (consisting of 256 processes spinning in infinite loops) shows on average only a 30% increase in request latency for Apache versus a 550% increase when running without Containers.
-## 五、My own thinking
+## 五、Summary
 * existing frameworks can effectively share resources using Mesos, that Mesos enables the development of specialized frameworks providing major performance gains, such as Spark, and that Mesos’s simple design allows the system to be fault tolerant and to scale to 50,000 nodes.
 * Mesos has great scalability. It can add a cluster framework that provides more abundant resource requirements for resources according to the corresponding model, and choose which task to use which kind of resources to run, so that their development is not constrained by the language provided by the system.
 * Each model has its own application and inapplicability. It has advantages and disadvantages. The universality and efficiency cannot be combined. The new management model of the corresponding system is a trade-off between versatility and efficiency.
 
+## 六、Reference
+* [Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center](http://static.usenix.org/events/nsdi11/tech/full_papers/Hindman_new.pdf)
+* [Mesos: 数据中心中细粒度资源共享的平台](https://blog.csdn.net/u011364612/article/details/53613511)
+* [为什么需要mesos](https://www.cnblogs.com/fxjwind/archive/2013/03/27/2984953.html)
