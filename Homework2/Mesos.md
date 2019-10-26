@@ -80,6 +80,7 @@ jobs based on the workload at Facebook.
 * Spark
 * Torque / MPI
 #### Macrobenchmark Results 
+* A successful result for Mesos would show two things:that Mesos achieves higher utilization than static parti- tioning, and that jobs finish at least as fast in the shared cluster as they do in their static partition, and possibly faster due to gaps in the demand of other frameworks.
 ### Overhead
 * The MPI job took on average 50.9s without Mesos and 51.8s with Mesos, while the Hadoop job took 160s without Mesos and 166s with Mesos. In both cases, the overhead of using Mesos was less than 4%.
 ### Data Locality through Delay Scheduling
