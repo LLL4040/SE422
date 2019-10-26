@@ -4,7 +4,8 @@
 
 ## What is Apollo?
 
-Apollo is a distributed scheduling framework for shared cluster state under Microsoft. Currently, Apollo has been deployed in Microsoft clustered production environment, is responsible for the scheduling and management of highly concurrent tasks million units on the number of server billions every day. The actual results, Apollo has good scalability, stability and good performance.
+Apollo is a distributed scheduling framework for shared cluster state under Microsoft.   
+Currently, Apollo has been deployed in Microsoft clustered production environment, is responsible for the scheduling and management of highly concurrent tasks million units on the number of server billions every day. The actual results, Apollo has good scalability,stability and good performance.
 
 ## What problem has Apollo solved?
 
@@ -30,7 +31,7 @@ Apollo is a distributed scheduling framework for shared cluster state under Micr
 
 ​    To cope with unexpected cluster dynamics, suboptimal estimations, and other abnormal runtime behaviors, which are facts of life in large-scale clusters,Apollo is made robust through a series of correction mechanisms that dynamically adjust and rectify suboptimal decisions at runtime.  
 
-### 5. **opportunistic scheduling** 
+### 5. opportunistic scheduling
 
 ​    Apollo divides operations into two categories, regular tasks and opportunistic tasks, ensuring low latency for regular jobs while using opportunistic jobs to increase cluster utilization and introducing a token-based mechanism to manage capacity. And to avoid overloading the cluster by limiting the total number of regular tasks.
 
@@ -50,7 +51,7 @@ Apollo is a distributed scheduling framework for shared cluster state under Micr
 
 *  Apollo can constantly provide a scheduling rate of above 10,000, reaching up to 20,000 per second in a single cluster.  
 *  Apollo is able to run 750 concurrent complex jobs (140,000 con-current regular tasks) and achieve over 90% CPU utilization when the demand is high during the weekdays,reaching closely the capacity of the cluster.  During the weekdays, 70% of Apollo’s workload comes from regular tasks. The balance shifts during the week-ends: more opportunistic tasks get executed on the avail-able resources when there are fewer regular tasks. 
-* **Summary. ** Combined, those results show that Apollo is highly scalable, capable of scheduling over 20,000 re-quests per second, and driving high and balanced system utilization while incurring minimum syqueuing time. 
+* **Summary** Combined, those results show that Apollo is highly scalable, capable of scheduling over 20,000 re-quests per second, and driving high and balanced system utilization while incurring minimum syqueuing time. 
 
 ### 2. Scheduling Quality
 
